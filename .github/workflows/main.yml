@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - run: make install
-      - run: make lint
-      - run: make test
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
       - uses: hexlet-components/hello-from-hexlet-action@release
