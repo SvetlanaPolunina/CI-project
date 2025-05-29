@@ -12,9 +12,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-      - run: npm ci
-      - run: npm run lint
-      - run: npm test
-      - uses: hexlet-components/hello-from-hexlet-action@release
+      - name: Print workflow's name
+        run: echo "run $GITHUB_WORKFLOW"
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+      - name: Install npm packages
+        run: npm ci
+      - name: Run lint
+        run: npm run lint
+      - name: Run tests
+        run: npm test
+      - name: Print Hellow from hexlet
+        uses: hexlet-components/hello-from-hexlet-action@release
