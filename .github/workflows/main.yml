@@ -23,6 +23,6 @@ jobs:
       - name: Run lint
         run: npm run lint
       - name: Run tests
-        run: make test
+        run: npm test
       - name: Print Hellow from hexlet
         uses: hexlet-components/hello-from-hexlet-action@release
