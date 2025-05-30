@@ -26,3 +26,7 @@ jobs:
         run: npm test
       - name: Print Hellow from hexlet
         uses: hexlet-components/hello-from-hexlet-action@release
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
