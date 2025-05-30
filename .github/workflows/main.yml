@@ -23,7 +23,7 @@ jobs:
       - name: Run lint
         run: npm run lint
       - name: Run tests
-        run: npm test
+        run: npm test -- --coverage
       - name: Print Hellow from hexlet
         uses: hexlet-components/hello-from-hexlet-action@release
       - name: SonarQube Scan
