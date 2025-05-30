@@ -1,6 +1,6 @@
 {
   "name": "ci-project",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Project to stady CI on hexlet",
   "homepage": "https://github.com/SvetlanaPolunina/CI-project#readme",
   "bugs": {
@@ -13,7 +13,7 @@
   "license": "ISC",
   "author": "Svetlana Polunina",
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "npx jest",
     "lint": "npx eslint ."

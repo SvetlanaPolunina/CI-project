@@ -1,4 +1,4 @@
-import sum from '../index.js'
+import sum from '../src/index.js'
 
 test.each([
   [1, 2, 3],
